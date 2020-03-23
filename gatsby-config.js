@@ -18,7 +18,7 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: '925 Production Home Page',
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
