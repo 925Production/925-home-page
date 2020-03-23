@@ -18,7 +18,7 @@ class Template extends React.Component {
     }
 
     return (
-      <Container>
+      <Container fluid style={{paddingLeft: 0, paddingRight: 0}}>
         <Navigation/>
         {children}
       </Container>

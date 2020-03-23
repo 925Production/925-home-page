@@ -1,23 +1,49 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import styles from './navigation.module.css'
-import logo from '../image/logo.svg'
+// import styles from './navigation.module.css'
+// import logo from '../image/logo.svg'
+import github from '../image/githubLogo.svg'
+import { Nav, Navbar, Container } from 'react-bootstrap'
 
-import { Nav, Navbar } from 'react-bootstrap'
+let githubLink = "https://github.com/925Production/925-home-page"
 
 export default () => (
-  <Navbar bg="dark" variant="dark">
-    <Navbar.Brand href="#home">
-      <img
-        alt=""
-        src={logo}
-        width="30%"
-        height="30%"
-        className="d-inline-block align-top"
-      />{' '}
-      React Bootstrap
-    </Navbar.Brand>
+  <Navbar bg="dark" variant="dark" expand="md">
+    <Container>
+      <Navbar.Brand href="/">
+        {/* <img
+          alt="925 Product Logo"
+          src={logo}
+          width="100"
+          height="30"
+          className="d-inline-block align-top"
+        /> */}
+        <span style={{fontSize:25}}>
+        <span style={{color:"red"}}>925</span> {' '}
+        Production
+        </span>
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="blog">blog</Nav.Link>
+          <Nav.Link href="about">about</Nav.Link>
+        </Nav>
+        <Nav>
+          <Nav.Link href={githubLink}>
+            <img 
+              src={github}
+              alt="github logo"
+              width="20"
+              height="20"
+            />
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Container>
+    
   </Navbar>
+  
   // <nav role="navigation">
   //   <ul className={styles.navigation}>
   //     <li className={styles.navigationItem}>
