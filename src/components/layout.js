@@ -1,11 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import base from './base.css'
-import Container from './container'
+// import Container from './container'
 import Navigation from './navigation'
 
+import { Container, Row, Col } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 class Template extends React.Component {
-  render() {
+  render () {
     const { location, children } = this.props
     let header
 
@@ -16,7 +19,7 @@ class Template extends React.Component {
 
     return (
       <Container>
-        <Navigation />
+        <Navigation/>
         {children}
       </Container>
     )
