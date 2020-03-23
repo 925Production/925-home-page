@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import get from 'lodash/get'
 import Img from 'gatsby-image'
+import { Container } from 'react-bootstrap'
 import Layout from '../components/layout'
 
 import heroStyles from '../components/hero.module.css'
@@ -23,7 +24,7 @@ class BlogPostTemplate extends React.Component {
               fluid={post.heroImage.fluid}
             />
           </div>
-          <div className="wrapper">
+          <Container className="wrapper">
             <h1 className="section-headline">{post.title}</h1>
             <p
               style={{
@@ -37,7 +38,7 @@ class BlogPostTemplate extends React.Component {
                 __html: post.body.childMarkdownRemark.html,
               }}
             />
-          </div>
+          </Container>
         </div>
       </Layout>
     )
