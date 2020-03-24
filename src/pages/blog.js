@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
+import { Container } from 'react-bootstrap'
 import styles from './blog.module.css'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
@@ -16,7 +17,7 @@ class BlogIndex extends React.Component {
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
           <div className={styles.hero}>Blog</div>
-          <div className="wrapper">
+          <Container className="wrapper">
             <h2 className="section-headline">Recent articles</h2>
             <ul className="article-list">
               {posts.map(({ node }) => {
@@ -27,7 +28,7 @@ class BlogIndex extends React.Component {
                 )
               })}
             </ul>
-          </div>
+          </Container>
         </div>
       </Layout>
     )
