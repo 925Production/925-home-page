@@ -18,12 +18,12 @@ function Hero ({data}) {
             <Carousel.Item>
               <Img
                 className={styles.heroImage}
-                alt="GAME"
+                alt={content.name}
                 fluid={content.heroImage.fluid}
               />
               <Carousel.Caption>
                 <div className={styles.heroDetails}>
-                  <h3 className={styles.heroHeadline}>GAME</h3>
+                  <h3 className={styles.heroHeadline}>{content.name}</h3>
                   <p className={styles.heroTitle}>{content.title}</p>
                   <p>{content.shortBio.shortBio}</p>
                 </div>
