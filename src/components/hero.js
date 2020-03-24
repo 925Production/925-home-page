@@ -6,15 +6,16 @@ import styles from './hero.module.css'
 export default ({ data }) => (
   <div className={styles.hero}>
   <Carousel>
+  
   <Carousel.Item>
     <Img
-      className={styles.heroImage}
-      alt={data.name}
-      fluid={data.heroImage.fluid}
-    />
+        className={styles.heroImage}
+        alt="GAME"
+        fluid={data.heroImage.fluid}
+      />
     <Carousel.Caption>
       <div className={styles.heroDetails}>
-        <h3 className={styles.heroHeadline}>{data.name}</h3>
+        <h3 className={styles.heroHeadline}>GAME</h3>
         <p className={styles.heroTitle}>{data.title}</p>
         <p>{data.shortBio.shortBio}</p>
       </div>
@@ -22,10 +23,10 @@ export default ({ data }) => (
   </Carousel.Item>
   <Carousel.Item>
     <Img
-        className={styles.heroImage}
-        alt={data.name}
-        fluid={data.heroImage.fluid}
-      />
+      className={styles.heroImage}
+      alt={data.name}
+      fluid={data.heroImage.fluid}
+    />
     <Carousel.Caption>
       <div className={styles.heroDetails}>
         <h3 className={styles.heroHeadline}>{data.name}</h3>
