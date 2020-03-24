@@ -26,8 +26,8 @@ export default () => (
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/game">GAME</Nav.Link>
-          <Nav.Link href="/about">ABOUT</Nav.Link>
+          {/* <Nav.Link href="/game">GAME</Nav.Link> */}
+          <Nav.Link href="/blog/welcome-blog">ABOUT</Nav.Link>
           <Nav.Link href="/blog">BLOG</Nav.Link>
         </Nav>
         <Nav>
