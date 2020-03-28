@@ -4,7 +4,6 @@ import base from './base.css'
 import Navigation from './navigation'
 
 import { Container, Row, Col } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 class Template extends React.Component {
   render () {
