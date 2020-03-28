@@ -7,7 +7,7 @@ function Hero ({data}) {
   const item = data ? data[0].node : undefined
 
   // console.log(item.heroImage.fluid)
-  console.log(item)
+  // console.log(item)
 
   return (
     <div className={styles.hero}>
