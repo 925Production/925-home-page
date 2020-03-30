@@ -15,7 +15,7 @@ function Hero ({data}) {
         {data.map((item) => {
           let content = item.node;
           return (
-            <Carousel.Item>
+            <Carousel.Item key={content.title}>
               <Img
                 className={styles.heroImage}
                 alt={content.name}
