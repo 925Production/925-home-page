@@ -8,6 +8,10 @@ import Layout from '../components/layout'
 
 import heroStyles from '../components/hero.module.css'
 
+import GitalkComponent from "gitalk/dist/gitalk-component";
+import 'gitalk/dist/gitalk.css';
+
+
 class BlogPostTemplate extends React.Component {
   render() {
     const post = get(this.props, 'data.contentfulBlogPost')
@@ -38,7 +42,19 @@ class BlogPostTemplate extends React.Component {
                 __html: post.body.childMarkdownRemark.html,
               }}
             />
+
+            <GitalkComponent options={{
+              clientID: '0708b63cb01d8f2ba35a',
+              clientSecret: 'd7a27d56bd84ac9a18e6bb0c6efebf44c6e6d9b2',
+              repo: '925-home-page',
+              owner: '925 Production',
+              admin: ['luxiaodou', 'Icejewel0319'],
+              id: location.pathname,      // Ensure uniqueness and length less than 50
+              distractionFreeMode: false  // Facebook-like distraction free mode
+            }} />
+
           </Container>
+
         </div>
       </Layout>
     )
