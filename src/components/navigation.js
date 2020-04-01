@@ -29,6 +29,7 @@ export default () => (
           {/* <Nav.Link href="/game">GAME</Nav.Link> */}
           <Nav.Link href="/blog/welcome-blog">ABOUT</Nav.Link>
           <Nav.Link href="/blog">BLOG</Nav.Link>
+          <Nav.Link href="/game">GAME</Nav.Link>
         </Nav>
         <Nav>
           <Nav.Link href={githubLink}>

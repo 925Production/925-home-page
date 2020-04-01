@@ -2,12 +2,13 @@ import React from 'react'
 import Img from 'gatsby-image'
 import { Carousel } from 'react-bootstrap'
 import styles from './hero.module.css'
+import { Link } from 'gatsby'
 
 function Hero ({data}) {
   const item = data ? data[0].node : undefined
 
   // console.log(item.heroImage.fluid)
-  // console.log(item)
+  console.log(data)
 
   return (
     <div className={styles.hero}>
@@ -23,9 +24,11 @@ function Hero ({data}) {
               />
               <Carousel.Caption>
                 <div className={styles.heroDetails}>
-                  <h3 className={styles.heroHeadline}>{content.name}</h3>
-                  <p className={styles.heroTitle}>{content.title}</p>
-                  <p>{content.shortBio.shortBio}</p>
+                  <Link to="/blog/welcome-blog">
+                    <h3 className={styles.heroHeadline}>{content.name}</h3>
+                    <p className={styles.heroTitle}>{content.title}</p>
+                    <p className={styles.heroShortBio}>{content.shortBio.shortBio}</p>
+                  </Link>
                 </div>
               </Carousel.Caption>
             </Carousel.Item>
