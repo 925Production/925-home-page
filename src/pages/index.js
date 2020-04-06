@@ -6,6 +6,7 @@ import { Container } from 'react-bootstrap'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
+import Footer from '../components/footer'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -36,6 +37,7 @@ class RootIndex extends React.Component {
             </ul>
           </Container>
         </div>
+        <Footer></Footer>
       </Layout>
     )
   }

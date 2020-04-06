@@ -7,6 +7,7 @@ import { Container } from 'react-bootstrap'
 import Layout from '../components/layout'
 import ArticleFull from '../components/article-full'
 import heroStyles from '../components/hero.module.css'
+import Footer from '../components/footer'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -42,6 +43,7 @@ class BlogPostTemplate extends React.Component {
             />
           </Container>
         </div>
+        <Footer></Footer>
       </Layout>
     )
   }

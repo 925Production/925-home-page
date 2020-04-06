@@ -6,6 +6,7 @@ import { Container } from 'react-bootstrap'
 import styles from './blog.module.css'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
+import Footer from '../components/footer'
 
 class BlogIndex extends React.Component {
   render() {
@@ -30,6 +31,7 @@ class BlogIndex extends React.Component {
             </ul>
           </Container>
         </div>
+        <Footer></Footer>
       </Layout>
     )
   }
