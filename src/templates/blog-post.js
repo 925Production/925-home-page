@@ -8,19 +8,36 @@ import Layout from '../components/layout'
 
 import heroStyles from '../components/hero.module.css'
 
-import GitalkComponent from "gitalk/dist/gitalk-component";
-import 'gitalk/dist/gitalk.css';
+import GitalkComponent from 'gitalk/dist/gitalk-component'
+import 'gitalk/dist/gitalk.css'
 
+const isBrowser = typeof window !== 'undefined'
+const Gitalk = isBrowser ? require('gitalk') : undefined
 
 class BlogPostTemplate extends React.Component {
-  render() {
+
+  componentDidMount () {
+    const post = get(this.props, 'data.contentfulBlogPost')
+    const gitalkInstance = new Gitalk({
+      clientID: '0708b63cb01d8f2ba35a',
+      clientSecret: 'd7a27d56bd84ac9a18e6bb0c6efebf44c6e6d9b2',
+      repo: '925-home-page',
+      owner: '925 Production',
+      admin: ['luxiaodou', 'Icejewel0319'],
+      id: post.slug,      // Ensure uniqueness and length less than 50
+      distractionFreeMode: false,  // Facebook-like distraction free mode
+    })
+    gitalkInstance.render('gitalk-container')
+  }
+
+  render () {
     const post = get(this.props, 'data.contentfulBlogPost')
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
 
     return (
       <Layout location={this.props.location}>
         <div style={{ background: '#fff' }}>
-          <Helmet title={`${post.title} | ${siteTitle}`} />
+          <Helmet title={`${post.title} | ${siteTitle}`}/>
           <div className={heroStyles.hero}>
             <Img
               className={heroStyles.heroImage}
@@ -43,18 +60,8 @@ class BlogPostTemplate extends React.Component {
               }}
             />
 
-            <GitalkComponent options={{
-              clientID: '0708b63cb01d8f2ba35a',
-              clientSecret: 'd7a27d56bd84ac9a18e6bb0c6efebf44c6e6d9b2',
-              repo: '925-home-page',
-              owner: '925 Production',
-              admin: ['luxiaodou', 'Icejewel0319'],
-              id: location.pathname,      // Ensure uniqueness and length less than 50
-              distractionFreeMode: false  // Facebook-like distraction free mode
-            }} />
-
+            <div className="gitalk-container"/>
           </Container>
-
         </div>
       </Layout>
     )
