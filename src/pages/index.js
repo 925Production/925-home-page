@@ -101,6 +101,7 @@ export const pageQuery = graphql`
             shortBio
           }
           title
+          link
           heroImage: image {
             fluid(
               maxWidth: 1180
