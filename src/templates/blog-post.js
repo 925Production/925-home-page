@@ -22,7 +22,7 @@ class BlogPostTemplate extends React.Component {
       clientID: '0708b63cb01d8f2ba35a',
       clientSecret: 'd7a27d56bd84ac9a18e6bb0c6efebf44c6e6d9b2',
       repo: '925-home-page',
-      owner: '925 Production',
+      owner: '925Production',
       admin: ['luxiaodou', 'Icejewel0319'],
       id: post.slug,      // Ensure uniqueness and length less than 50
       distractionFreeMode: false,  // Facebook-like distraction free mode
