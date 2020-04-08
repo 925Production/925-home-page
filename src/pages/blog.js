@@ -2,11 +2,12 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import { Container } from 'react-bootstrap'
+import { Container, Image } from 'react-bootstrap'
 import styles from './blog.module.css'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
 import Footer from '../components/footer'
+import blogImage from '../image/blog.jpg'
 
 class BlogIndex extends React.Component {
   render() {
@@ -17,7 +18,9 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location}>
         <div style={{ background: '#fff' }}>
           <Helmet title={siteTitle} />
-          <div className={styles.hero}>Blog</div>
+          <div className={styles.hero}>
+          <Image src={blogImage} fluid/>
+          </div>
           <Container className="wrapper">
             <h2 className="section-headline">Articles</h2>
             <ul className="article-list">

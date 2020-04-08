@@ -24,7 +24,7 @@ function Hero ({data}) {
               />
               <Carousel.Caption>
                 <div className={styles.heroDetails}>
-                  <Link to="/blog/welcome-blog">
+                  <Link to={content.link}>
                     <h3 className={styles.heroHeadline}>{content.name}</h3>
                     <p className={styles.heroTitle}>{content.title}</p>
                     <p className={styles.heroShortBio}>{content.shortBio.shortBio}</p>
