@@ -26,6 +26,7 @@ class BlogPostTemplate extends React.Component {
       admin: ['luxiaodou', 'Icejewel0319'],
       id: post.slug,      // Ensure uniqueness and length less than 50
       distractionFreeMode: false,  // Facebook-like distraction free mode
+      language: 'en',
     })
     gitalkInstance.render('gitalk-container')
   }
