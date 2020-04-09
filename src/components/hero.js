@@ -18,7 +18,7 @@ function Hero ({data}) {
           return (
             <Carousel.Item>
               <Img
-                className={styles.heroImage}
+                className="d-block w-100"
                 alt={content.name}
                 fluid={content.heroImage.fluid}
               />
