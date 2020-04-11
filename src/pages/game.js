@@ -14,7 +14,6 @@ class Game extends Component {
         <div className={styles.hero}>
           <Image src={gameImage} fluid/>
         </div>
-        <h1>game page</h1>
         <ArticleFull></ArticleFull>
         <Footer></Footer>
       </Layout>

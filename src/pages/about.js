@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { graphql } from 'gatsby'
+import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import styles from './blog.module.css'
@@ -14,7 +16,6 @@ class About extends Component {
         <div className={styles.hero}>
           <Image src={aboutImage} fluid/>
         </div>
-        <h1>about page</h1>
         <ArticleFull></ArticleFull>
         <Footer></Footer>
       </Layout>

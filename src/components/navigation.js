@@ -8,7 +8,7 @@ import { Nav, Navbar, Container } from 'react-bootstrap'
 let githubLink = "https://github.com/925Production/925-home-page"
 
 export default () => (
-  <Navbar bg="dark" variant="dark" expand="md" fixed="top">
+  <Navbar bg="dark" variant="dark" expand="md" sticky="top">
     <Container>
       <Navbar.Brand href="/">
         {/* <img
@@ -29,6 +29,7 @@ export default () => (
           <Nav.Link href="/about">ABOUT</Nav.Link>
           <Nav.Link href="/blog">BLOG</Nav.Link>
           <Nav.Link href="/game">GAME</Nav.Link>
+          <Nav.Link href="/member">MEMBERS</Nav.Link>
         </Nav>
         <Nav>
           <Nav.Link href={githubLink}>
