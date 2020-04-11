@@ -6,6 +6,8 @@ import { Container } from 'react-bootstrap'
 import Hero from '../components/hero'
 import Layout from '../components/layout'
 import ArticlePreview from '../components/article-preview'
+import Footer from '../components/footer'
+import Video from '../components/video'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -21,6 +23,7 @@ class RootIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
         <div style={{ background: '#fff' }}>
+          <Video />
           <Helmet title={siteTitle}/>
           <Hero data={hero}/>
           <Container className="wrapper">
@@ -36,6 +39,7 @@ class RootIndex extends React.Component {
             </ul>
           </Container>
         </div>
+        <Footer></Footer>
       </Layout>
     )
   }
