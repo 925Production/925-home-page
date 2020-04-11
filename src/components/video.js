@@ -7,7 +7,7 @@ class Video extends Component {
     render(){
         return (
             <div>
-                <video className={styles.video} src={video} autoPlay loop fluid></video>
+                <video className={styles.video} src={video} autoPlay muted loop fluid></video>
             </div>
         )
     }
