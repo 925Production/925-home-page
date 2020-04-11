@@ -5,8 +5,9 @@ import get from 'lodash/get'
 import Img from 'gatsby-image'
 import { Container } from 'react-bootstrap'
 import Layout from '../components/layout'
-
+import ArticleFull from '../components/article-full'
 import heroStyles from '../components/hero.module.css'
+import Footer from '../components/footer'
 
 import GitalkComponent from 'gitalk/dist/gitalk-component'
 import 'gitalk/dist/gitalk.css'
@@ -34,6 +35,7 @@ class BlogPostTemplate extends React.Component {
   render () {
     const post = get(this.props, 'data.contentfulBlogPost')
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
+    const articleFull = post.body.childMarkdownRemark.html
 
     return (
       <Layout location={this.props.location}>
@@ -55,6 +57,7 @@ class BlogPostTemplate extends React.Component {
             >
               {post.publishDate}
             </p>
+            <ArticleFull article={{articleFull}} />
             <div
               dangerouslySetInnerHTML={{
                 __html: post.body.childMarkdownRemark.html,
@@ -64,6 +67,7 @@ class BlogPostTemplate extends React.Component {
             <div id="gitalk-container"/>
           </Container>
         </div>
+        <Footer></Footer>
       </Layout>
     )
   }

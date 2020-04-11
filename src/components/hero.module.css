@@ -37,11 +37,17 @@
 }
 
 .heroHeadline {
+  color: #fff;
   margin: 0;
 }
 
 .heroTitle {
+  color: #fff;
   margin: 0;
   font-size: 1.125em;
   font-weight: bold;
+}
+
+.heroShortBio {
+  color: #fff;
 }
