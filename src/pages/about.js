@@ -3,20 +3,21 @@ import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import styles from './blog.module.css'
-import { Image } from 'react-bootstrap'
+import styles from './about.module.css'
+import { Image, Container } from 'react-bootstrap'
 import aboutImage from '../image/about.jpg'
 import Footer from '../components/footer'
-import ArticleFull from '../components/article-full'
 
 class About extends Component {
   render () {
     return (
       <Layout>
-        <div className={styles.hero}>
-          <Image src={aboutImage} fluid/>
+        <div className={styles.test}>
+          <Container>
+            <h1>About us</h1>
+            <p>We are 925 Production. We are all</p>
+          </Container>
         </div>
-        <ArticleFull></ArticleFull>
         <Footer></Footer>
       </Layout>
     )

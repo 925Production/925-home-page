@@ -2,4 +2,29 @@
     height: 100%;
     width: 100%;
     display: block;
+    z-index: -100;
+    opacity: 0.85;
+}
+
+.intro {
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    width: 100%;
+    padding-top: 5%;
+    color: #f0f8ff;
+    font-size: 120px;
+}
+
+.download {
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    padding-top: 35%;
+    color: #f0f8ff;
+    width: 100%;
+}
+
+.character {
+    font-family: 'VT323', monospace;
 }
