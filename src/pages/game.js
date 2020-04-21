@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Image } from 'react-bootstrap'
-import gameImage from '../image/game.jpg'
-import styles from './blog.module.css'
+import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Footer from '../components/footer'
 import Video from '../components/video'
@@ -14,6 +13,9 @@ class Game extends Component {
   render () {
     return (
       <Layout>
+        <Helmet>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"/>
+        </Helmet>
         <ArticleBlock
           title="Story"
           article="
