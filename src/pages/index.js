@@ -24,7 +24,8 @@ class RootIndex extends React.Component {
       <Layout location={this.props.location}>
         <div style={{ background: '#fff' }}>
           <Video />
-          <Helmet title={siteTitle}/>
+          <Helmet title={siteTitle}>
+          </Helmet>
           <Hero data={hero}/>
           <Container className="wrapper">
             <h2 className="section-headline">Recent articles</h2>
