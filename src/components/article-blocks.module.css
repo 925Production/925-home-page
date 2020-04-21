@@ -20,7 +20,7 @@
     font-size: 50px;
     text-align: center;
     color: wheat;
-    font-family: 'VT323', monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .article {
@@ -28,15 +28,8 @@
     font-size: x-large;
     background-image: linear-gradient(45deg, rgb(80,76,96), black);
     opacity: 0.9;
-    font-family: 'VT323', monospace;
+    font-family: 'Roboto Mono', monospace;
 }
-
-/* Medium devices (tablets, 768px and up) */
-/* @media (max-width: 1550px) {
-    .article{
-        font-size: larger;
-    }
-} */
 
 @media (min-width: 1200px) and (max-width: 1548.98px) {
     .article{

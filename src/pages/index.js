@@ -23,8 +23,12 @@ class RootIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
         <div style={{ background: '#fff' }}>
-          <Video />
+          <Video 
+            intro="Seek the truth in the temple and find back the future"
+            slogan=""
+            button="DOWNLOAD"/>
           <Helmet title={siteTitle}>
+          <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"/>
           </Helmet>
           <Hero data={hero}/>
           <Container className="wrapper">

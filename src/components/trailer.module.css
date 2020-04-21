@@ -31,16 +31,8 @@
 
 .title {
     text-align: center;
-    color: wheat;
-    font-family: 'VT323', monospace;
+    color: #f5deb3;
+    font-family: 'Roboto Mono', monospace;
     width: 50%;
     margin: auto;
-}
-
-.article {
-    color: white;
-    font-size: large;
-    background-image: linear-gradient(180deg, rgb(80,76,96), black);
-    opacity: 0.9;
-    font-family: 'VT323', monospace;
 }
