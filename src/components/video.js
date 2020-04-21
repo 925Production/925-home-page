@@ -5,16 +5,17 @@ import styles from './video.module.css'
 
 class Video extends Component {
     render(){
+        const props = this.props;
         return (
             <div>
                 <div className={styles.intro}>
-                    <p className={styles.character}>Eternity</p>
-                    <h1 className={styles.character}>Seek the truth in the temple and find back the future</h1>
+                    <p className={styles.title}>Eternity</p>
+                    <h1 className={styles.character}>{props.intro}</h1>
                 </div>
                 <div className={styles.download}>
-                    <h1 className={styles.character}>ARE YOU READY</h1>
+                <h1 className={styles.character}>{props.slogan}</h1>
                     <br/>
-                    <Button variant="dark" size="lg">DOWNLOAD NOW</Button>
+                    <Button variant="dark" size="lg">{props.button}</Button>
                 </div>
                 <video className={styles.video}  autoPlay muted loop>
                     <source src={video} type="video/mp4"></source>

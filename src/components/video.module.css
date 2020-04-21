@@ -16,6 +16,11 @@
     font-size: 120px;
 }
 
+@font-face {
+    font-family: brush;
+    src: url('../font/Mokutton.ttf')
+}
+
 .download {
     position: absolute;
     z-index: 100;
@@ -24,7 +29,10 @@
     color: #f0f8ff;
     width: 100%;
 }
+.title {
+    font-family: brush;
+}
 
 .character {
-    font-family: 'VT323', monospace;
+    font-family: 'Roboto Mono', monospace;
 }

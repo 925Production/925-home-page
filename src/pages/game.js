@@ -50,7 +50,10 @@ class Game extends Component {
         >
         </ArticleBlock> */}
         <Trailer></Trailer>
-        <Video></Video>
+        <Video 
+            intro=""
+            slogan="ARE YOU READY"
+            button="TRY FREE"/>
         <Footer></Footer>
       </Layout>
     )
