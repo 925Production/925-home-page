@@ -19,11 +19,10 @@ export default () => (
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          {/* <Nav.Link href="/about">ABOUT</Nav.Link> */}
           <Nav.Link href="/game">GAME</Nav.Link>
           <Nav.Link href="/blog">BLOG</Nav.Link>
           <Nav.Link href="/member">MEMBERS</Nav.Link>
-          <Nav.Link href="https://docs.google.com/document/d/1UKHq6NGEKq_Pv0Y7xrFMKhLh341krTPYy3sUdCfH04s/edit?usp=sharing">DOCUMENT</Nav.Link>
+          <Nav.Link href="https://docs.google.com/document/d/1UKHq6NGEKq_Pv0Y7xrFMKhLh341krTPYy3sUdCfH04s/edit?usp=sharing" target="_blank">DOCUMENT</Nav.Link>
         </Nav>
         <Nav>
           <Nav.Link href={githubLink}>

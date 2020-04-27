@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import { Image, Col, Row, Container, Card, CardColumns } from 'react-bootstrap'
+import { Image, Col, Row, Container, Card, Table } from 'react-bootstrap'
 import './member.css'
 import Footer from '../components/footer'
 import memImage from '../image/member.jpg'
@@ -24,10 +24,10 @@ class Member extends Component {
             <Img alt="" fluid={member.node.photo.fluid}/>
             <Card.Body>
               <Card.Title>{member.node.name}</Card.Title>
-              <a href={member.node.github}>
+              <a href={member.node.github} target="_blank">
                 <Image src={githubImg} className="icon"></Image>
               </a>
-              <a href={member.node.linkedin}>
+              <a href={member.node.linkedin} target="_blank">
                 <Image src={lkImg} className="icon"></Image>
               </a>
             </Card.Body>
@@ -44,10 +44,10 @@ class Member extends Component {
             <Img alt="" fluid={member.node.photo.fluid}/>
             <Card.Body>
               <Card.Title>{member.node.name}</Card.Title>
-              <a href={member.node.github}>
+              <a href={member.node.github} target="_blank">
                 <Image src={githubImg} className="icon"></Image>
               </a>
-              <a href={member.node.linkedin}>
+              <a href={member.node.linkedin} target="_blank">
                 <Image src={lkImg} className="icon"></Image>
               </a>
             </Card.Body>
@@ -62,6 +62,48 @@ class Member extends Component {
         <Container>
           <Row>{fst_line}</Row>
           <Row className="justify-content-md-center">{scd_line}</Row>
+          <Table responsive striped hover bordered className="table">
+            <thead>
+              <tr>
+                <th>Roles</th>
+                <th>Members</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Project Manager</td>
+                <td>Song Lu</td>
+              </tr>
+              <tr>
+                <td>Level Designer</td>
+                <td>Chaochun Ma, Song Lu</td>
+              </tr>
+              <tr>
+                <td>UI Designer</td>
+                <td>Weizhuo Zhang, Wei Zhou, Kai Pang</td>
+              </tr>
+              <tr>
+                <td>AI Designer</td>
+                <td>Song Lu</td>
+              </tr>
+              <tr>
+                <td>Models & Animation</td>
+                <td>Haoqian Song, Song Lu</td>
+              </tr>
+              <tr>
+                <td>Music & FX</td>
+                <td>Weizhuo Zhang, Siyuan Lin</td>
+              </tr>
+              <tr>
+                <td>Website</td>
+                <td>Siyuan Lin, Song Lu</td>
+              </tr>
+              <tr>
+                <td>Project Manager</td>
+                <td>Song Lu</td>
+              </tr>
+            </tbody>
+          </Table>
         </Container>
         <Footer></Footer>
       </Layout>
