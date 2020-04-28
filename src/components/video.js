@@ -15,7 +15,7 @@ class Video extends Component {
                 <div className={styles.download}>
                 <h1 className={styles.character}>{props.slogan}</h1>
                     <br/>
-                    <Button href={"https://drive.google.com/open?id=1dmVkzGHo6H1bq-Iv_aQUeSB2pkmgG90j"} variant="dark" size="lg">{props.button}</Button>
+                    <Button href={"https://drive.google.com/open?id=1dmVkzGHo6H1bq-Iv_aQUeSB2pkmgG90j"} variant="dark" size="lg" target="_blank">{props.button}</Button>
                 </div>
                 <video className={styles.video}  autoPlay muted loop>
                     <source src={video} type="video/mp4"></source>
