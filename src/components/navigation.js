@@ -22,11 +22,11 @@ export default () => (
           <Nav.Link href="/game">GAME</Nav.Link>
           <Nav.Link href="/blog">BLOG</Nav.Link>
           <Nav.Link href="/member">MEMBERS</Nav.Link>
-          <Nav.Link href="https://docs.google.com/document/d/1UKHq6NGEKq_Pv0Y7xrFMKhLh341krTPYy3sUdCfH04s/edit?usp=sharing" target="_blank">DOCUMENT</Nav.Link>
+          <Nav.Link href="https://drive.google.com/open?id=1WO_hvfCnt8lutvsPOt6VY_XzfGqTm0Wl" target="_blank">DOCUMENT</Nav.Link>
         </Nav>
         <Nav>
           <Nav.Link href={githubLink}>
-            <img 
+            <img
               src={github}
               alt="github logo"
               width="20"
@@ -36,9 +36,9 @@ export default () => (
         </Nav>
       </Navbar.Collapse>
     </Container>
-    
+
   </Navbar>
-  
+
   // <nav role="navigation">
   //   <ul className={styles.navigation}>
   //     <li className={styles.navigationItem}>

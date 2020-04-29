@@ -12,13 +12,13 @@ class Trailer extends Component {
                     </Col>
                     <Col md={8}>
                         <iframe className={styles.video}
-                                src="https://www.youtube.com/embed/JoWTg_h4sFI" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                                src="https://www.youtube.com/embed/fw3veHAGcrE"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
                         </iframe>
                     </Col>
-                    
+
                 </Row>
             </div>
         )
